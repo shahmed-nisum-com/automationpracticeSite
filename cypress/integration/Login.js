@@ -1,54 +1,33 @@
+///<refrence types="Cypress"/>
 
 import Steps from '../integration/TestCasesPackage/Steps'
-import Locator from '../fixtures/Locator';
-
-
-const StepsObj = new Steps();
-
-describe('Test package for automation practice', function () {
-
-    // it('Go to Automation practice class', () => {
-
-    //     StepsObj.visit();
-
-    // });
-
-    // it('find search text field', function () {
-
-    //     StepsObj.goToSearchField();
-    // });
-
-    // it('validate search product name', function () {
-
-    //     StepsObj.findProductName();
-    // });
-
-    // it('Go to cart screen', function () {
-
-    //     StepsObj.goToSearchText();
-
-    // });
+import Constant from '../fixtures/Constant';
 
 
 
-    it('Go to Automation practice class', () => {
+const stepObj = new Steps();
 
-        StepsObj.visit();
+describe('Test cases for Login', function () {
+
+    beforeEach(() => {
+
+        stepObj.visit();
 
     });
 
-    it('Click on sign in button', () => {
+    it('Provide valid credentials and check account and LogOut links', () => {
 
-        StepsObj.clickOnSignIn();
-
-    });
-
-    it('Click on new Account button', () => {
-
-        StepsObj.createNewAccount();
+        stepObj.loginProcess(Constant.EMAIL_ID,Constant.PASSWORD);
+        stepObj.findAccountLink();
+        stepObj.findLogOutLink();
 
     });
 
+    it('Provide invalid credentials and check account and LogOut links', () => {
 
+        stepObj.loginProcess(Constant.WRONG_EMAIL_ID,Constant.WRONG_PASSWORD);
+        stepObj.findErrorMessage();
+
+    });
 
 });
