@@ -1,6 +1,7 @@
 {
     "pageLoadTimeout":200000,
     "chromeWebSecurity":false,
-    "defaultCommandTimeout":8000
-    
+    "defaultCommandTimeout":8000,
+    "baseUrl":"http://automationpractice.com/index.php"
 }
+    
