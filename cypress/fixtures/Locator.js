@@ -1,0 +1,43 @@
+export default
+    {
+        //Sign Up Locator
+        "emailCreateAccount": "#email_create",
+        "createAnAccount": "#SubmitCreate > span",
+        "genderRadio": "#id_gender1",
+        "firstName": "#customer_firstname",
+        "lastName": "#customer_lastname",
+        "passwd": "#passwd",
+        "1stAddress": "#address1",
+        "city": "#city",
+        "postCode": "#postcode",
+        "idState": "#id_state",
+        "phoneMobile": "#phone_mobile",
+        "textRegister": "Register",
+        "SignUpForm": "#create-account_form",
+
+
+        //Sign In Locator
+        "emailTextField": "#email",
+        "passwordTextField": "#passwd",
+        "signIn": ".login",
+        "signInButton": "//button[@id='SubmitLogin']//span[1]",
+        "seachTextField": "//input[@placeholder='Search']",
+        "searchTextButton": "//button[@name='submit_search']",
+        "resultContainer": "//div[@class='product-image-container'][1]",
+        "clickOnResult": "//button[@class='exclusive']//span[1]",
+        "inStockText": "//span[@class='label label-success']",
+        "unitePrice": "(//td[@colspan='2'])[1]",
+        "checkOut": "//span[text()='Proceed to checkout']",
+        "chkOut": "(//button[@type='submit']//span)[2]",
+        "checkBox": "//input[@type='checkbox']",
+        "bankLink": "//a[@class='bankwire']//span[1]",
+        "confirm": "(//button[@type='submit']//span)[2]",
+        "orderDetail": ".box",
+        "continue": ".continue > span",
+        'viewMyCart': "[title='View my shopping cart']",
+        "accountLink": ".account",
+        "logOut": ".logout",
+        "totalProduct": "#total_product",
+        "errorMessage": "#center_column > :nth-child(2)",
+        "Description":'.cart_description',
+    }
